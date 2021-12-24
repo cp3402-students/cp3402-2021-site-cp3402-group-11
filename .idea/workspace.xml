@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="intial">
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="intial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone/style.css" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +64,7 @@
       <workItem from="1640093515703" duration="13000" />
       <workItem from="1640094849338" duration="48000" />
       <workItem from="1640364258856" duration="592000" />
-      <workItem from="1640365134099" duration="422000" />
+      <workItem from="1640365134099" duration="546000" />
     </task>
     <task id="LOCAL-00001" summary="intial">
       <created>1640091568024</created>
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640365540858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="intial">
+      <created>1640365622860</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640365622860</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
