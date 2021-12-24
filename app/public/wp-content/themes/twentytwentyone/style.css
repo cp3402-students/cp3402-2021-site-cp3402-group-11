@@ -98,8 +98,9 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 /* Categories 01 to 03 are the basics. */
 
 /* Variables */
-body{
-	color: blue !important ;
+
+body {
+	background-color: #00d082 !important;
 }
 :root {
 

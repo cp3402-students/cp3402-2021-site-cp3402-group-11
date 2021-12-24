@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="intial">
-      <change afterPath="$PROJECT_DIR$/.idea/cp3402-2021-site-cp3402-group-11.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +20,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="27c3886f-6c40-4a47-b0c4-dab274fcbf47" name="Local" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Local">
     <include_path>
-      <path value="$USER_HOME$/Downloads/wordpress" />
+      <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
   <component name="ProjectId" id="22b11YFQBqSe4cBr9EgDG8x55Fy" />
@@ -41,6 +43,11 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" nameIsGenerated="true" is_https="true" browser="e5120d43-2c3f-47ef-9f26-65e539e05186" server_name="Local">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +57,28 @@
       <option name="presentableId" value="Default" />
       <updated>1640091259646</updated>
       <workItem from="1640091264441" duration="277000" />
+      <workItem from="1640091545555" duration="122000" />
+      <workItem from="1640092127958" duration="50000" />
+      <workItem from="1640093515703" duration="13000" />
+      <workItem from="1640094849338" duration="48000" />
+      <workItem from="1640364258856" duration="592000" />
+      <workItem from="1640365134099" duration="120000" />
     </task>
+    <task id="LOCAL-00001" summary="intial">
+      <created>1640091568024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640091568024</updated>
+    </task>
+    <task id="LOCAL-00002" summary="intial">
+      <created>1640091608851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640091608851</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
