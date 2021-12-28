@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="intial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +75,10 @@
       <workItem from="1640366085736" duration="179000" />
       <workItem from="1640366322003" duration="179000" />
       <workItem from="1640366876427" duration="15000" />
+      <workItem from="1640367007519" duration="297000" />
+      <workItem from="1640430215925" duration="86000" />
+      <workItem from="1640606556901" duration="23000" />
+      <workItem from="1640616934989" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="intial">
       <created>1640091568024</created>
@@ -115,7 +122,28 @@
       <option name="project" value="LOCAL" />
       <updated>1640365815753</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="intial">
+      <created>1640367195935</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640367195936</updated>
+    </task>
+    <task id="LOCAL-00008" summary="intial">
+      <created>1640367272138</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640367272138</updated>
+    </task>
+    <task id="LOCAL-00009" summary="intial">
+      <created>1640367296387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640367296387</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
