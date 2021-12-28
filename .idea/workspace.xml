@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="intial">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_21,_9_09_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/readme.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/readme.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -79,6 +78,7 @@
       <workItem from="1640430215925" duration="86000" />
       <workItem from="1640606556901" duration="23000" />
       <workItem from="1640616934989" duration="49000" />
+      <workItem from="1640698353331" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="intial">
       <created>1640091568024</created>
