@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="intial">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/twentytwentyone-child/style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="updated the parent theme with some images and information" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +11,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -35,7 +31,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="22b11YFQBqSe4cBr9EgDG8x55Fy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -162,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intial" />
-    <option name="LAST_COMMIT_MESSAGE" value="intial" />
+    <MESSAGE value="updated the parent theme with some images and information" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the parent theme with some images and information" />
   </component>
 </project>
