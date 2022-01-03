@@ -105,7 +105,7 @@ const LicenseValidationControls = () => {
 	const downloadLink = sprintf(
 		//translators: %1$s Store page URL.
 		__(
-			`If you have purchased our Essential or Growth Bundle, please install the premium version of the plugin that you can %1$sdownload.%2$s from our store.`,
+			`If you have purchased our Essential or Growth Bundle, please install the premium version of the plugin that you can %1$sdownload%2$s from our store.`,
 			'astra-sites'
 		),
 		'<a href="https://store.brainstormforce.com/login/" target="_blank">',

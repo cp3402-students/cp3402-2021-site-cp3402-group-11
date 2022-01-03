@@ -744,6 +744,11 @@ body.step-import-site:not( .st-error ) .step-header a {
 				cursor: not-allowed;
 				opacity: 0.5;
 			}
+			&.active {
+				svg path {
+					fill: var(--st-color-accent);
+				}
+			}
 		}
 	}
 	.step-customizer & .step-content {
@@ -820,6 +825,10 @@ body.step-import-site:not( .st-error ) .step-header a {
 			margin-right: 0 !important;
 		}
 	}
+}
+
+.stc-tooltip-content a {
+	color: var(--st-color-white);
 }
 
 @keyframes rotate-alternate {

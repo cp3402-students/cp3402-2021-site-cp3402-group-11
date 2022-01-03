@@ -58,16 +58,11 @@ const SiteCategory = () => {
 		},
 		{
 			id: '6',
-			name: __( 'Local', 'astra-sites' ),
-			slug: 'Local',
+			name: __( 'Local Business', 'astra-sites' ),
+			slug: 'Local Business',
 		},
 		{
 			id: '7',
-			name: __( 'Business', 'astra-sites' ),
-			slug: 'Business',
-		},
-		{
-			id: '8',
 			name: __( 'Professional', 'astra-sites' ),
 			slug: 'Professional',
 		},

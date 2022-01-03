@@ -41,6 +41,8 @@ const TypographyWrapper = () => {
 	 * Add selected demo typograply as default typography
 	 */
 	useEffect( () => {
+		const googleFontsURL = document.getElementById( 'google-fonts-url' );
+
 		if ( templateResponse !== null ) {
 			const defaultFonts = [];
 			const defaultTypography = getDefaultTypography( templateResponse );
@@ -55,75 +57,74 @@ const TypographyWrapper = () => {
 				document.head.appendChild( node );
 			}
 
-			if ( ! document.getElementById( 'google-fonts-url' ) ) {
-				const node = document.createElement( 'link' );
-				node.id = 'google-fonts-url';
-				node.setAttribute( 'rel', 'stylesheet' );
-
-				const fontsName = [];
-
-				let bodyFont = defaultTypography[ 'body-font-family' ] || '';
-				let bodyFontWeight =
-					parseInt( defaultTypography[ 'body-font-weight' ] ) || '';
-				if ( bodyFontWeight ) {
-					bodyFontWeight = `:wght@${ bodyFontWeight }`;
-				}
-
-				if ( bodyFont ) {
-					bodyFont = getFontName( bodyFont );
-					bodyFont = bodyFont.replace( ' ', '+' );
-					fontsName.push( `family=${ bodyFont }${ bodyFontWeight }` );
-				}
-
-				let headingFont =
-					defaultTypography[ 'headings-font-family' ] || '';
-				let headingFontWeight =
-					parseInt( defaultTypography[ 'headings-font-weight' ] ) ||
-					'';
-
-				if ( headingFontWeight ) {
-					headingFontWeight = `:wght@${ headingFontWeight }`;
-				}
-
-				if ( headingFont ) {
-					headingFont = getFontName( headingFont, bodyFont );
-					headingFont = headingFont.replace( ' ', '+' );
-					fontsName.push(
-						`family=${ headingFont }${ headingFontWeight }`
-					);
-				}
-
-				let otherFontsString = '';
-				if ( !! fonts ) {
-					for ( const font of fonts ) {
-						const fontHeading = getFontName(
-							font[ 'headings-font-family' ]
-						).replaceAll( ' ', '+' );
-						const fontHeadingWeight =
-							font[ 'headings-font-weight' ];
-
-						const fontBody = getFontName(
-							font[ 'body-font-family' ]
-						).replaceAll( ' ', '+' );
-						const fontBodyWeight = font[ 'body-font-weight' ];
-
-						otherFontsString += `&family=${ fontHeading }:wght@${ fontHeadingWeight }&family=${ fontBody }:wght@${ fontBodyWeight }`;
-					}
-					otherFontsString = otherFontsString.replace(
-						/[&]{1}$/i,
-						''
-					);
-				}
-
-				if ( fontsName ) {
-					const fontUrl = `https://fonts.googleapis.com/css2?${ fontsName.join(
-						'&'
-					) }${ otherFontsString }&display=swap`;
-
-					node.setAttribute( 'href', fontUrl );
-					document.head.appendChild( node );
-				}
+			// Removes existing Google fonts URL.
+			if ( !! googleFontsURL ) {
+				googleFontsURL.remove();
 			}
+
+			const node = document.createElement( 'link' );
+			node.id = 'google-fonts-url';
+			node.setAttribute( 'rel', 'stylesheet' );
+
+			const fontsName = [];
+
+			let bodyFont = defaultTypography[ 'body-font-family' ] || '';
+			let bodyFontWeight =
+				parseInt( defaultTypography[ 'body-font-weight' ] ) || '';
+			if ( bodyFontWeight ) {
+				bodyFontWeight = `:wght@${ bodyFontWeight }`;
+			}
+
+			if ( bodyFont ) {
+				bodyFont = getFontName( bodyFont );
+				bodyFont = bodyFont.replace( ' ', '+' );
+				fontsName.push( `family=${ bodyFont }${ bodyFontWeight }` );
+			}
+
+			let headingFont = defaultTypography[ 'headings-font-family' ] || '';
+			let headingFontWeight =
+				parseInt( defaultTypography[ 'headings-font-weight' ] ) || '';
+
+			if ( headingFontWeight ) {
+				headingFontWeight = `:wght@${ headingFontWeight }`;
+			}
+
+			if ( headingFont ) {
+				headingFont = getFontName( headingFont, bodyFont );
+				headingFont = headingFont.replace( ' ', '+' );
+				fontsName.push(
+					`family=${ headingFont }${ headingFontWeight }`
+				);
+			}
+
+			let otherFontsString = '';
+			if ( !! fonts ) {
+				for ( const font of fonts ) {
+					const fontHeading = getFontName(
+						font[ 'headings-font-family' ]
+					).replaceAll( ' ', '+' );
+					const fontHeadingWeight = font[ 'headings-font-weight' ];
+
+					const fontBody = getFontName(
+						font[ 'body-font-family' ]
+					).replaceAll( ' ', '+' );
+					const fontBodyWeight = font[ 'body-font-weight' ];
+
+					otherFontsString += `&family=${ fontHeading }:wght@${ fontHeadingWeight }&family=${ fontBody }:wght@${ fontBodyWeight }`;
+				}
+				otherFontsString = otherFontsString.replace( /[&]{1}$/i, '' );
+			}
+
+			// Add Google fonts URL.
+			if ( fontsName ) {
+				const fontUrl = `https://fonts.googleapis.com/css2?${ fontsName.join(
+					'&'
+				) }${ otherFontsString }&display=swap`;
+
+				node.setAttribute( 'href', fontUrl );
+				document.head.insertAdjacentElement( 'afterbegin', node );
+			}
+
 			if ( 0 === typographyIndex ) {
 				sendPreview( defaultTypography );
 				dispatch( {

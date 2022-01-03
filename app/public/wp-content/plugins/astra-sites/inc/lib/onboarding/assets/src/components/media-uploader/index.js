@@ -83,11 +83,17 @@ const MediaUploader = () => {
 	};
 
 	const lastStep = () => {
-		dispatch( {
-			type: 'set',
-			currentIndex: currentIndex - 1,
-			currentCustomizeIndex: 0,
+		sendPostMessage( {
+			param: 'clearPreviewAssets',
+			data: {},
 		} );
+		setTimeout( () => {
+			dispatch( {
+				type: 'set',
+				currentIndex: currentIndex - 1,
+				currentCustomizeIndex: 0,
+			} );
+		}, 300 );
 	};
 
 	const resetLogoWidth = ( event ) => {

@@ -61,7 +61,9 @@ const SiteColorsControls = () => {
 					<h4>{ __( 'Change Colors', 'astra-sites' ) }</h4>
 					<div
 						className={ `customize-reset-btn ${
-							activePaletteSlug === 'default' ? 'disabled' : ''
+							activePaletteSlug === 'default'
+								? 'disabled'
+								: 'active'
 						}` }
 						onClick={ resetColorPlallete }
 					>

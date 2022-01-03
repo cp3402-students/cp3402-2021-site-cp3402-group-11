@@ -1,4 +1,4 @@
-/*! elementor - v3.5.2 - 22-12-2021 */
+/*! elementor - v3.5.3 - 28-12-2021 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -30385,7 +30385,8 @@ var _stringify = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-c
         var dragged = (_elementor$channels$p = elementor.channels.panelElements.request('element:selected')) === null || _elementor$channels$p === void 0 ? void 0 : _elementor$channels$p.model.attributes;
         settings.getDropContainer().view.createElementFromModel({
           elType: dragged.elType,
-          widgetType: dragged.widgetType
+          widgetType: dragged.widgetType,
+          custom: dragged.custom
         }, {
           at: settings.getDropIndex(currentSide, event)
         });

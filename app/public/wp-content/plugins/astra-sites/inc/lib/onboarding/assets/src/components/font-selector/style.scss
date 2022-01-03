@@ -71,6 +71,15 @@
             border: 1px solid var(--st-color-accent)
         }
     }
+    .stc-tooltip:nth-child(odd) .stc-tooltip-content {
+        left: 0;
+    }
+    .stc-tooltip:nth-child(even) .stc-tooltip-content{
+        right: 0;
+    }
+    .stc-tooltip-content {
+        top: 3.5rem;
+    }
 }
 
 .customize-site-typography {

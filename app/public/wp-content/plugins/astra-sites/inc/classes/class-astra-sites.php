@@ -1990,6 +1990,7 @@ if ( ! class_exists( 'Astra_Sites' ) ) :
 			require_once ASTRA_SITES_DIR . 'inc/classes/class-astra-sites-elementor-images.php';
 			require_once ASTRA_SITES_DIR . 'inc/classes/compatibility/class-astra-sites-compatibility.php';
 			require_once ASTRA_SITES_DIR . 'inc/classes/class-astra-sites-importer.php';
+			require_once ASTRA_SITES_DIR . 'inc/classes/class-astra-sites-image-processing.php';
 			require_once ASTRA_SITES_DIR . 'inc/classes/class-astra-sites-wp-cli.php';
 			require_once ASTRA_SITES_DIR . 'inc/lib/class-astra-sites-ast-block-templates.php';
 			require_once ASTRA_SITES_DIR . 'inc/lib/onboarding/class-onboarding.php';
@@ -2189,11 +2190,23 @@ if ( ! class_exists( 'Astra_Sites' ) ) :
 
 			$plugin_updates          = get_plugin_updates();
 			$update_avilable_plugins = array();
+			$incompatible_plugins = array();
 
 			if ( ! empty( $required_plugins ) ) {
+				$php_version = Astra_Sites_Onboarding_Setup::get_instance()->get_php_version();
 				foreach ( $required_plugins as $key => $plugin ) {
 
 					$plugin = (array) $plugin;
+
+					if ( 'woocommerce' === $plugin['slug'] && version_compare( $php_version, '7.0', '<' ) ) {
+						$plugin['min_php_version'] = '7.0';
+						$incompatible_plugins[] = $plugin;
+					}
+
+					if ( 'presto-player' === $plugin['slug'] && version_compare( $php_version, '7.3', '<' ) ) {
+						$plugin['min_php_version'] = '7.3';
+						$incompatible_plugins[] = $plugin;
+					}
 
 					/**
 					 * Has Pro Version Support?
@@ -2268,6 +2281,7 @@ if ( ! class_exists( 'Astra_Sites' ) ) :
 				'required_plugins'             => $response,
 				'third_party_required_plugins' => $third_party_required_plugins,
 				'update_avilable_plugins'      => $update_avilable_plugins,
+				'incompatible_plugins'         => $incompatible_plugins,
 			);
 
 			if ( wp_doing_ajax() ) {

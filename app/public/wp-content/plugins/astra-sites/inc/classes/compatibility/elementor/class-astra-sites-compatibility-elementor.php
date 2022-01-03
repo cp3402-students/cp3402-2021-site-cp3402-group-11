@@ -10,6 +10,10 @@ namespace AstraSites\Elementor;
 
 defined( 'ABSPATH' ) || exit;
 
+if ( ! class_exists( '\Elementor\Plugin' ) ) {
+	return;
+}
+
 if ( ! class_exists( 'Astra_Sites_Compatibility_Elementor' ) ) :
 
 	/**
@@ -64,6 +68,19 @@ if ( ! class_exists( 'Astra_Sites_Compatibility_Elementor' ) ) :
 			}
 
 			add_action( 'astra_sites_before_delete_imported_posts', array( $this, 'force_delete_kit' ), 10, 2 );
+			add_action( 'astra_sites_before_sse_import', array( $this, 'disable_attachment_metadata' ) );
+		}
+
+		/**
+		 * Disable the attachment metadata
+		 */
+		public function disable_attachment_metadata() {
+			remove_filter(
+				'wp_update_attachment_metadata', array(
+					\Elementor\Plugin::$instance->uploads_manager->get_file_type_handlers( 'svg' ),
+					'set_svg_meta_data',
+				), 10, 2
+			);
 		}
 
 		/**

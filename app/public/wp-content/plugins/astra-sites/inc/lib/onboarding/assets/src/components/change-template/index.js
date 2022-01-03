@@ -4,6 +4,7 @@ import { decodeEntities } from '@wordpress/html-entities';
 import { useStateValue } from '../../store/store';
 import './style.scss';
 import ICONS from '../../../icons';
+import { sendPostMessage } from '../../utils/functions';
 
 const ChangeTemplate = () => {
 	const [
@@ -12,11 +13,18 @@ const ChangeTemplate = () => {
 	] = useStateValue();
 
 	const goToShowcase = () => {
-		dispatch( {
-			type: 'set',
-			currentIndex: currentIndex - 1,
-			currentCustomizeIndex: 0,
+		sendPostMessage( {
+			param: 'clearPreviewAssets',
+			data: {},
 		} );
+
+		setTimeout( () => {
+			dispatch( {
+				type: 'set',
+				currentIndex: currentIndex - 1,
+				currentCustomizeIndex: 0,
+			} );
+		}, 300 );
 	};
 
 	return (

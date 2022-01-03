@@ -68,6 +68,7 @@ if ( ! class_exists( 'Astra_Sites_Importer' ) ) {
 
 			require_once ASTRA_SITES_DIR . 'inc/importers/batch-processing/class-astra-sites-batch-processing.php';
 
+			add_action( 'wp_ajax_astra-sites-set-start-flag', array( $this, 'set_start_flag' ) );
 			add_action( 'astra_sites_image_import_complete', array( $this, 'after_batch_complete' ) );
 
 			// Reset Customizer Data.
@@ -560,6 +561,7 @@ if ( ! class_exists( 'Astra_Sites_Importer' ) ) {
 			do_action( 'astra_sites_import_complete', $demo_data );
 
 			update_option( 'astra_sites_import_complete', 'yes', 'no' );
+			delete_transient( 'astra_sites_import_started' );
 
 			if ( wp_doing_ajax() ) {
 				wp_send_json_success();
@@ -656,6 +658,22 @@ if ( ! class_exists( 'Astra_Sites_Importer' ) ) {
 
 			// Merge remote demo and defaults.
 			return wp_parse_args( $remote_args, $defaults );
+		}
+
+		/**
+		 * Set a flag that indicates the import process has started.
+		 */
+		public function set_start_flag() {
+			if ( ! defined( 'WP_CLI' ) && wp_doing_ajax() ) {
+				// Verify Nonce.
+				check_ajax_referer( 'astra-sites', '_ajax_nonce' );
+
+				if ( ! current_user_can( 'customize' ) ) {
+					wp_send_json_error( __( 'You are not allowed to perform this action', 'astra-sites' ) );
+				}
+			}
+			set_transient( 'astra_sites_import_started', 'yes', HOUR_IN_SECONDS );
+			wp_send_json_success();
 		}
 
 		/**

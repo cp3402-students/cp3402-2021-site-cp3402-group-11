@@ -35,8 +35,8 @@ export const DARK_PALETTES = [
 		slug: 'style-3',
 		title: __( 'Style 3', 'astra-sites' ),
 		colors: [
-			'#FC479E',
-			'#E1006C',
+			'#FF42B3',
+			'#FF0099',
 			'#FFFFFF',
 			'#EEEAEC',
 			'#2B161B',
@@ -51,7 +51,7 @@ export const DARK_PALETTES = [
 		title: __( 'Style 4', 'astra-sites' ),
 		colors: [
 			'#FF6A97',
-			'#FF006B',
+			'#FA036B',
 			'#FFFFFF',
 			'#EEEAEC',
 			'#2B161B',
@@ -80,8 +80,8 @@ export const DARK_PALETTES = [
 		slug: 'style-6',
 		title: __( 'Style 6', 'astra-sites' ),
 		colors: [
-			'#FCDC4D',
-			'#F6C900',
+			'#F9C349',
+			'#FFB100',
 			'#FFFFFF',
 			'#F0EFEC',
 			'#1E1810',
@@ -93,10 +93,10 @@ export const DARK_PALETTES = [
 	},
 	{
 		slug: 'style-7',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 7', 'astra-sites' ),
 		colors: [
-			'#20BAAD',
-			'#14857B',
+			'#30C7B5',
+			'#00AC97',
 			'#FFFFFF',
 			'#F0EFEC',
 			'#1E1810',
@@ -108,7 +108,7 @@ export const DARK_PALETTES = [
 	},
 	{
 		slug: 'style-8',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 8', 'astra-sites' ),
 		colors: [
 			'#1BAE70',
 			'#06752E',
@@ -123,7 +123,7 @@ export const DARK_PALETTES = [
 	},
 	{
 		slug: 'style-9',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 9', 'astra-sites' ),
 		colors: [
 			'#2FE6FF',
 			'#00D0EC',
@@ -138,7 +138,7 @@ export const DARK_PALETTES = [
 	},
 	{
 		slug: 'style-10',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 10', 'astra-sites' ),
 		colors: [
 			'#4175FC',
 			'#084AF3',
@@ -146,36 +146,6 @@ export const DARK_PALETTES = [
 			'#E8EBEC',
 			'#101218',
 			'#3B4244',
-			'#000000',
-			'#4B4F58',
-			'#F6F7F8',
-		],
-	},
-	{
-		slug: 'style-11',
-		title: __( 'Style 6', 'astra-sites' ),
-		colors: [
-			'#FF8F3F',
-			'#EC6300',
-			'#FFFFFF',
-			'#F9F6F4',
-			'#66625F',
-			'#37302A',
-			'#000000',
-			'#4B4F58',
-			'#F6F7F8',
-		],
-	},
-	{
-		slug: 'style-12',
-		title: __( 'Style 6', 'astra-sites' ),
-		colors: [
-			'#FF8F3F',
-			'#EC6300',
-			'#FFFFFF',
-			'#F9F6F4',
-			'#66625F',
-			'#37302A',
 			'#000000',
 			'#4B4F58',
 			'#F6F7F8',
@@ -218,8 +188,8 @@ export const LIGHT_PALETTES = [
 		slug: 'style-3',
 		title: __( 'Style 3', 'astra-sites' ),
 		colors: [
-			'#FC479E',
-			'#E1006C',
+			'#FF42B3',
+			'#FF0099',
 			'#2B161B',
 			'#554B4E',
 			'#F6F3F5',
@@ -233,8 +203,8 @@ export const LIGHT_PALETTES = [
 		slug: 'style-4',
 		title: __( 'Style 4', 'astra-sites' ),
 		colors: [
-			'#FF87CA',
-			'#F853AF',
+			'#FF6A97',
+			'#FA036B',
 			'#2B161B',
 			'#645659',
 			'#F8F3F5',
@@ -263,8 +233,8 @@ export const LIGHT_PALETTES = [
 		slug: 'style-6',
 		title: __( 'Style 6', 'astra-sites' ),
 		colors: [
-			'#FCDC4D',
-			'#F6C900',
+			'#F9C349',
+			'#FFB100',
 			'#1E1810',
 			'#62615C',
 			'#F8F7F3',
@@ -276,10 +246,10 @@ export const LIGHT_PALETTES = [
 	},
 	{
 		slug: 'style-7',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 7', 'astra-sites' ),
 		colors: [
-			'#48BCA2',
-			'#10A48E',
+			'#30C7B5',
+			'#00AC97',
 			'#14261C',
 			'#4F5655',
 			'#F3F6F3',
@@ -291,7 +261,7 @@ export const LIGHT_PALETTES = [
 	},
 	{
 		slug: 'style-8',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 8', 'astra-sites' ),
 		colors: [
 			'#1BAE70',
 			'#06752E',
@@ -306,7 +276,7 @@ export const LIGHT_PALETTES = [
 	},
 	{
 		slug: 'style-9',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 9', 'astra-sites' ),
 		colors: [
 			'#2FC1FF',
 			'#08ACF2',
@@ -321,7 +291,7 @@ export const LIGHT_PALETTES = [
 	},
 	{
 		slug: 'style-10',
-		title: __( 'Style 6', 'astra-sites' ),
+		title: __( 'Style 10', 'astra-sites' ),
 		colors: [
 			'#4175FC',
 			'#084AF3',

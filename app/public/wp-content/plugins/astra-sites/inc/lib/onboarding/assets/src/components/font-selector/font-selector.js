@@ -1,5 +1,6 @@
 import React from 'react';
 import { __ } from '@wordpress/i18n';
+import { Tooltip } from '@brainstormforce/starter-templates';
 import Button from '../../components/button/button';
 import { useStateValue } from '../../store/store';
 import './style.scss';
@@ -41,77 +42,81 @@ const List = ( { className, options, onSelect, selected, type } ) => {
 					options[ index ][ 'headings-font-weight' ];
 				const id = options[ index ].id;
 				return (
-					<li
-						className={ `
-						ist-font
-						${ id === selected ? 'active' : '' }
-						` }
-						key={ id }
-						onClick={ ( event ) => {
-							onSelect( event, id );
-						} }
-						tabIndex="0"
-						onKeyDown={ ( event ) => {
-							handleKeyPress( event, id );
-						} }
-						title={
+					<Tooltip
+						content={
 							type === 'other'
 								? `${ headingFont } / ${ bodyFont }`
 								: null
 						}
+						key={ id }
 					>
-						{
-							<>
-								{ type === 'default' && (
-									<>
-										<span
-											style={ {
-												fontFamily: headingFont,
-												fontWeight: headingFontWeight,
-											} }
-											className="heading-font-preview"
-										>
-											{ headingFont }
-										</span>
-										<span className="font-separator">
-											/
-										</span>
-										<span
-											style={ {
-												fontFamily: bodyFont,
-												fontWeight: bodyFontWeight,
-											} }
-											className="body-font-preview"
-										>
-											{ bodyFont }
-										</span>
-									</>
-								) }
-								{ type === 'other' && (
-									<>
-										<span
-											style={ {
-												fontFamily: headingFont,
-												fontWeight: headingFontWeight,
-											} }
-											className="heading-font-preview"
-										>
-											A
-										</span>
-										<span
-											style={ {
-												fontFamily: bodyFont,
-												fontWeight: bodyFontWeight,
-											} }
-											className="body-font-preview"
-										>
-											a
-										</span>
-									</>
-								) }
-							</>
-						}
-					</li>
+						<li
+							className={ `
+						ist-font
+						${ id === selected ? 'active' : '' }
+						` }
+							key={ id }
+							onClick={ ( event ) => {
+								onSelect( event, id );
+							} }
+							tabIndex="0"
+							onKeyDown={ ( event ) => {
+								handleKeyPress( event, id );
+							} }
+						>
+							{
+								<>
+									{ type === 'default' && (
+										<>
+											<span
+												style={ {
+													fontFamily: headingFont,
+													fontWeight: headingFontWeight,
+												} }
+												className="heading-font-preview"
+											>
+												{ headingFont }
+											</span>
+											<span className="font-separator">
+												/
+											</span>
+											<span
+												style={ {
+													fontFamily: bodyFont,
+													fontWeight: bodyFontWeight,
+												} }
+												className="body-font-preview"
+											>
+												{ bodyFont }
+											</span>
+										</>
+									) }
+									{ type === 'other' && (
+										<>
+											<span
+												style={ {
+													fontFamily: headingFont,
+													fontWeight: headingFontWeight,
+												} }
+												className="heading-font-preview"
+											>
+												A
+											</span>
+											<span
+												style={ {
+													fontFamily: bodyFont,
+													fontWeight: bodyFontWeight,
+												} }
+												className="body-font-preview"
+											>
+												a
+											</span>
+										</>
+									) }
+								</>
+							}
+						</li>
+					</Tooltip>
 				);
 			} ) }
 		</ul>
@@ -206,7 +211,7 @@ const FontSelector = ( { options, onSelect, selected } ) => {
 				</h4>
 				<div
 					className={ `customize-reset-btn ${
-						typographyIndex === 0 ? 'disabled' : ''
+						typographyIndex === 0 ? 'disabled' : 'active'
 					}` }
 					onClick={ resetTypography }
 				>

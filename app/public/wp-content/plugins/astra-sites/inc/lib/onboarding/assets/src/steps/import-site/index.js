@@ -357,6 +357,9 @@ const ImportSite = () => {
 		if ( ! reset ) {
 			return;
 		}
+		if ( importError ) {
+			return;
+		}
 		percentage += 2;
 		dispatch( {
 			type: 'set',
@@ -466,6 +469,9 @@ const ImportSite = () => {
 	 * 1.1 Perform Reset for Customizer.
 	 */
 	const performResetCustomizer = async () => {
+		if ( importError ) {
+			return;
+		}
 		dispatch( {
 			type: 'set',
 			importStatus: __( 'Resetting customizer.', 'astra-sites' ),
@@ -529,6 +535,9 @@ const ImportSite = () => {
 	 * 1.2 Perform reset Site options
 	 */
 	const performResetSiteOptions = async () => {
+		if ( importError ) {
+			return;
+		}
 		dispatch( {
 			type: 'set',
 			importStatus: __( 'Resetting site options.', 'astra-sites' ),
@@ -589,6 +598,9 @@ const ImportSite = () => {
 	 * 1.3 Perform Reset for Widgets
 	 */
 	const performResetWidget = async () => {
+		if ( importError ) {
+			return;
+		}
 		const widgets = new FormData();
 		widgets.append( 'action', 'astra-sites-reset-widgets-data' );
 		widgets.append( '_ajax_nonce', astraSitesVars._ajax_nonce );
@@ -651,6 +663,9 @@ const ImportSite = () => {
 	 * 1.4 Reset Terms and Forms.
 	 */
 	const performResetTermsAndForms = async () => {
+		if ( importError ) {
+			return;
+		}
 		const formOption = new FormData();
 		formOption.append( 'action', 'astra-sites-reset-terms-and-forms' );
 		formOption.append( '_ajax_nonce', astraSitesVars._ajax_nonce );
@@ -714,6 +729,9 @@ const ImportSite = () => {
 	 * 1.5 Reset Posts.
 	 */
 	const performResetPosts = async () => {
+		if ( importError ) {
+			return;
+		}
 		const data = new FormData();
 		data.append( 'action', 'astra-sites-get-deleted-post-ids' );
 		data.append( '_ajax_nonce', astraSitesVars._ajax_nonce );

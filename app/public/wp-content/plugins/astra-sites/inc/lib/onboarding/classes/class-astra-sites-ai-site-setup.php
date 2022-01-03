@@ -53,6 +53,7 @@ if ( ! class_exists( 'Astra_Sites_AI_Site_Setup' ) ) :
 		 * @return void
 		 */
 		public function report_error() {
+			delete_transient( 'astra_sites_import_started' );
 			$api_url = add_query_arg( [], trailingslashit( Astra_Sites::get_instance()->get_api_domain() ) . 'wp-json/starter-templates/v2/import-error/' );
 
 			if ( ! astra_sites_is_valid_url( $api_url ) ) {
@@ -62,6 +63,13 @@ if ( ! class_exists( 'Astra_Sites_AI_Site_Setup' ) ) :
 						'code'    => 'Error',
 					)
 				);
+			}
+
+			if (
+				strpos( ABSPATH, 'unaux' ) !== false ||
+				strpos( ABSPATH, 'epizy' ) !== false
+			) {
+				wp_send_json_success( __( 'Bypassing the this error.', 'astra-sites' ) );
 			}
 
 			$api_args = array(

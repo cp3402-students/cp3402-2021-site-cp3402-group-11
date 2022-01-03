@@ -176,3 +176,16 @@ function astra_sites_get_api_params() {
 	);
 }
 
+/**
+ * Check if Import for Astra Site is in progress
+ *
+ * @since 3.0.21
+ * @return array
+ */
+function astra_sites_has_import_started() {
+	$has_import_started = get_transient( 'astra_sites_import_started' );
+	if ( 'yes' === $has_import_started ) {
+		return true;
+	}
+	return false;
+}

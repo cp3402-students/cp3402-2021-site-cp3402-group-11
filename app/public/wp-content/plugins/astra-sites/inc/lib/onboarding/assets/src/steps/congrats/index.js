@@ -88,7 +88,7 @@ const Congrats = () => {
 
 	let descMessage;
 	let tweetMessage;
-	const threshold = 15; // Max 15mins threshold.
+	const threshold = 5; // Max 5 mins threshold.
 
 	if ( timeTaken > 0 && timeTaken <= threshold ) {
 		timeTaken = timeTaken < 1 ? timeTaken.split( '.' )[ 1 ] : timeTaken;
