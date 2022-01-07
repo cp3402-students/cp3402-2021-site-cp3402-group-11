@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="updated the parent theme with some images and information">
-      <change afterPath="$PROJECT_DIR$/Deployment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/astra-child/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/astra-child/screenshot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/astra-child/style.css" beforeDir="false" />
+    <list default="true" id="f40f7077-622a-4a6c-8770-a64d6297325c" name="Changes" comment="added site, deployment and theme mark down files">
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/astra-child/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/astra-child/screenshot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/astra-child/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/public/wp-content/themes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -105,6 +101,7 @@
       <workItem from="1641523812771" duration="2417000" />
       <workItem from="1641560610113" duration="90000" />
       <workItem from="1641563668221" duration="337000" />
+      <workItem from="1641570158065" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="intial">
       <created>1640091568024</created>
@@ -176,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641210802204</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added site, deployment and theme mark down files">
+      <created>1641570214510</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641570214510</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +200,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intial" />
     <MESSAGE value="updated the parent theme with some images and information" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the parent theme with some images and information" />
+    <MESSAGE value="added site, deployment and theme mark down files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added site, deployment and theme mark down files" />
   </component>
 </project>

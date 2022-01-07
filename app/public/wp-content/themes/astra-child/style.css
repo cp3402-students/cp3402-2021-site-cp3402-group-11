@@ -1,0 +1,59 @@
+/*
+Theme Name: Astra Child
+Theme URI: https://wpastra.com/
+Template: astra
+Author: Igor Kenzin, Keashyn Naidoo, Bruce Wilson Wong, Akenzhan Bexitov
+Author URI: https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
+Description: Astra is fast, fully customizable &amp; beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with Schema.org code integrated and is Native AMP ready so search engines will love your site. It offers special features and templates so it works perfectly with all page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Some of the other features: # WooCommerce Ready # Responsive # RTL &amp; Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained &amp; Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and WooCommerce ready theme that you can use for building any kind of website!
+Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
+Version: 3.7.6.1641288260
+Updated: 2022-01-04 09:24:20
+
+*/
+header {
+    background: #0c9d85 !important;
+    color: #000000 !important;
+
+}
+ul ul {
+    display: none ;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    z-index: 99999;
+    width: 180px;
+    background: #ff0000;
+    box-shadow: 0px 3px 3px rgba(245, 121, 121, 0.2);
+}
+ul ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #e77979;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #797979;
+}
+
+main {
+    background-color: #25f59f;
+    color: #000000;
+}
+
+article{
+    background-color: #5faee3;
+}
