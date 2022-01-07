@@ -27,6 +27,7 @@ Below is the plugins we used to create the bakery website
 * [WPforms Lite](https://wpforms.com/)
 Using WPForms plugin we have created Contacts and Workshops Forms. WPForms plugin allows the user to put their contact details on the website rather than downloading or printing a physical form.
 
-![](../Images for Markdown files/Screenshot 2022-01-05 at 5.57.34 PM.png)
+
+<img width="1221" alt="Screenshot 2022-01-05 at 5 57 34 PM" src="https://user-images.githubusercontent.com/68360382/148569110-19b8474d-b338-4c78-bee8-312c246dafa2.png">
 
 
