@@ -22,7 +22,7 @@ The following is how development is recommended for this project
 
 8. Once the main branch is merged and updated with the changes, the repository can be pulled to local environment so as to be uploaded via zip file into the staging site via appearance/theme/add new, then activated to test in the staging website. After testing on the staging website is successful, the theme zip folder can be uploaded to the production site.
 
-#Web Hosting
+# Web Hosting
 We use this web hosting provider called <a href="https://infinityfree.net">infinityfree</a> because it offers the following  
 * An autoinstaller with more than 400 different applications, including WordPress
 * Free subdomains
@@ -43,7 +43,7 @@ Its totally free you just need to sign up with an account. Below will show you h
 Version control has been done with GitHub. It is the practice of tracking, managing and comparing the old and the new version of the code that has been commited by each team member to the repository.
 
 
-#Project Management
+# Project Management
 
 * <a href="http://www.blissful-bites.infinityfreeapp.com" target="_blank">Production Site</a>
 * <a href="http://www.blissful-bites-staging.epizy.com" target="_blank">Staging Site</a>
