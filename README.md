@@ -15,7 +15,7 @@ The following file called  a2.html will have these inside which are:
 * Login in details for Wordpress for both the Production and Staging site.
 
 
-The custom theme for this Project is called Astrac child theme and its in this main repository or you can download it from this repository.
+The custom theme for this Project is called Astra child theme and its in this main repository or you can download it from this repository.
 
 * [GITHUB Environment](https://github.com/cp3402-students/cp3402-2021-env-cp3402-group-11)
 
