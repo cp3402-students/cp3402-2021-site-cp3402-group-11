@@ -24,5 +24,6 @@ This is a link to our agile development of the website we created for the startu
 * [Agile Development](https://xd.adobe.com/view/87ce4e25-e086-4916-b167-fefa92f7e5b1-d29d/) 
 
 
-This is our video Presentation for Group 11.
+This is a link to our video Presentation for Group 11.
+* [Group 11 Video Presentaion for CP3402-Content-Management-Systems-Assignment-2-and-3](https://youtu.be/bxq0keL7YYc)
 
