@@ -11,7 +11,7 @@ The following file called  [a2.html](https://github.com/cp3402-students/cp3402-2
 
 * Names of the members with their LinkedIn accounts and Github accounts.
 * Goals of the webiste.
-* Project links to the production and staging site, Github repository, Project board and a socail communication platform we used to chat with each other.
+* Project links to the production and staging site, Github repository, Project board and a communication platform we used to chat with each other.
 * Login in details for Wordpress for both the Production and Staging site.
 
 
@@ -20,7 +20,7 @@ The custom theme for this Project is called Astra child theme and its in this ma
 * [GITHUB Environment](https://github.com/cp3402-students/cp3402-2021-env-cp3402-group-11)
 
 
-This is a link to our agile development of the website we created for the startup of Assignment 2 for CP3402 Contenet Management Systems.
+This is a link to our agile development of the website we created for the startup of Assignment 2 for CP3402 Content Management Systems.
 * [Agile Development](https://xd.adobe.com/view/87ce4e25-e086-4916-b167-fefa92f7e5b1-d29d/) 
 
 
